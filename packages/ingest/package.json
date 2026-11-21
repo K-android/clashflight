@@ -1,0 +1,16 @@
+{
+  "name": "@clashflight/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@clashflight/core": "*",
+    "fast-xml-parser": "^5.12.1",
+    "fflate": "^0.8.3",
+    "web-ifc": "0.0.80"
+  }
+}

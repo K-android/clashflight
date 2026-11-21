@@ -1,0 +1,20 @@
+{
+  "name": "clashflight",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "generate:samples": "node tools/generate-sample.mjs",
+    "test": "vitest run",
+    "build": "npm run build --workspace=@clashflight/app",
+    "dev": "npm run dev --workspace=@clashflight/app",
+    "typecheck": "tsc --noEmit -p packages/core/tsconfig.json && tsc --noEmit -p packages/ingest/tsconfig.json && tsc --noEmit -p packages/engine/tsconfig.json && tsc --noEmit -p packages/game/tsconfig.json && tsc --noEmit -p packages/app/tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  }
+}

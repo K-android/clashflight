@@ -1,0 +1,23 @@
+{
+  "name": "@clashflight/app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "copy:assets": "node ../../tools/copy-wasm.mjs",
+    "dev": "npm run copy:assets && vite",
+    "build": "npm run copy:assets && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@clashflight/core": "*",
+    "@clashflight/engine": "*",
+    "@clashflight/game": "*",
+    "@clashflight/ingest": "*",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "vite": "^8.3.8"
+  }
+}

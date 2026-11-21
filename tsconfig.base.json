@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "paths": {
+      "@clashflight/core": ["./packages/core/src/index.ts"],
+      "@clashflight/ingest": ["./packages/ingest/src/index.ts"],
+      "@clashflight/engine": ["./packages/engine/src/index.ts"],
+      "@clashflight/game": ["./packages/game/src/index.ts"]
+    }
+  }
+}
